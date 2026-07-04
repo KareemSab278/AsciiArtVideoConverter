@@ -1,0 +1,13 @@
+[package]
+name = "AsciiArt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ffmpeg-next = "7"
+image = "0.25"
+crossterm = "0.26"
+anyhow = "1"
+[env]
+PKG_CONFIG_PATH = "/opt/homebrew/opt/ffmpeg/lib/pkgconfig"
+BINDGEN_EXTRA_CLANG_ARGS = "-I/opt/homebrew/opt/ffmpeg/include"
